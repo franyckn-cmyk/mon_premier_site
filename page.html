@@ -22,11 +22,14 @@
 
     header{
 
-        background-color: aquamarine;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: black;
         height: 100px;
         width: 80%;
         text-align: center;
-        padding: 20px;
+        padding: 10px;
         margin: 10px auto;
         border-radius: 20px;
 
@@ -34,10 +37,11 @@
     
     nav{
 
-        background-color: rgb(194, 181, 5);
+        background-color: gray;
         height: 100px;
         width: 80%;
         text-align: center;
+        padding: 10px;
         margin: 10px auto;
         border-radius: 20px;
 
@@ -46,38 +50,38 @@
     
     main{
 
-        background-color: rgb(233, 211, 84);
+        background-color: black;
         height: 600px;
         width: 80%;  
         text-align: center;
         margin: 10px auto;
         border-radius: 20px; 
-        position: flex;
+        display: flex;
         justify-self: space-between;
-        height: 90%;
-        flex-direction: row;
-
-
+        align-items: center;
+        
     }
 
     
     section{
 
-        background-color: rgb(225, 225, 71);
-        height: 100px;
-        width: 80%;
+        background-color: white;
+        height: 100%;
+        width: 60%;
         text-align: center;
-        margin: 10px auto;
+        text-align: 50%;
+        margin: 10px;
         border-radius: 20px;
+        text-size-adjust: initial;
 
     }
     
     
     aside{
 
-        background-color: rgb(255, 0, 17);
-        height: 100px;
-        width: 80%;
+        background-color: blue;
+        height: 100%;
+        width: 40%;
         text-align: center;
         margin: 10px auto;
         border-radius: 20px;
@@ -86,15 +90,79 @@
     
     footer{
 
-        background-color: rgb(255, 0, 17);
+        background-color: gray;
         height: 100px;
         width: 80%;
         text-align: center;
         margin:  10px auto;
         border-radius: 20px;
 
+    }
+
+    .header {
+    display: flex;
+    align-items: center; /* aligne logo et texte verticalement */
+    gap: 15px; /* espace entre logo et slogan */
+    padding: 10px;
+  }
+  .header img {
+    width: 80px; /* taille du logo */
+    height: auto;
+  }
+  .slogan {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+  }
+
+    ul{
+
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+    }
+
+    ul li{
+
+        list-style: none;
+    }
+
+    ul li a{
+
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        margin: 10px;
+    }
+
+    main img{
+
+    width: 150px;
+    height: auto;
+    margin-right: 15px;
+    border-radius: 5px;
 
     }
+
+    main p{
+
+        text-align: center;
+        margin: auto;
+        height: auto;
+    }
+
+    main a{
+
+        height: 10%;
+    }
+
+    main h2{
+
+        margin: auto;
+    }
+
+
 
 
 </style>
@@ -102,18 +170,79 @@
 
 <body>
     <header>
-        <h1> header </h1>
-    </header>
+        <div class="logo">
+
+           <img src="/télécharger.webp" alt="logo" width="80px">
+    
+        </div>
+        
+        
+        <div class="slogan">
+
+            <p style="font-size: 40px; font-weight: bold; font-family: 'Times New Roman', Times, serif; color: blue;"> Voir</p> <p style="font-size: 40px; font-weight: bold; font-family: 'Times New Roman', Times, serif; color: white;"> anime</p>
+            <p class="slogan" style="color: white;"> Votre détente notre priorité !!!</p>
+
+        </div>
+    </header>                                                                                                                                                                                                                                                                           
 
 <nav>
+
+    <ul>
+
+        <li>
+            <a href="https://voiranime.homes/">Acceuilles</a>
+            <a href="https://voiranime.bio/">Contactes</a>
+            <a href="#">A propos</a>
+            <a href="#">Blogue</a>
+        
+        </li>
+
+    </ul>
     
-<h1> nav </h1>
+
 </nav>
 
 <main>
 
-<section>  <h1> main </h1> </section>
-<aside> <h1> aside </h1> </aside>
+<section>  
+
+  <h2>Calendrier de sortie de l'anime Rent a Girlfreinds</h2>
+  <p><time datetime="2026-06-24">24 juin 2026</time></p>
+  <img src="/rent-a-girlfriend-saison-5-calendrier-sortie-episodes.avif" alt="Rent a girlfreind" width="40%">
+  <p>La saison 5 de Rent-a-girlfriend suit un planning différent du simulcast, et pour ne rien rater de lanime, on vous détaille son calendrier de sortie des épisodes.</p>
+  <a href="https://www.dexerto.fr"> Lire plus </a>
+    
+  <h2> Solo Leving</h2>
+  <p ><time datetime="2026-07-10">10 juillet 2026</time></p>
+  <img src="/jinwoo-changement-de-look-solo-leveling-animation-partners.avif" alt="Solo leving" width="40%">
+  <p >La série live-action Solo Leveling ne devrait pas sortir avant 2026, voire 2027 : si elle na pas encore de date de sortie officielle à ce stade, Netflix a tout de même confirmé quelle était en production.</p>
+  <a href="https://www.dexerto.fr">Lire plus</a>
+
+  <h2>News Anime !</h2>
+  <p><time datetime="2026-07-05">5 juillet 2026</time></p>
+  <img src="/kill-blue-calendrier-sortie-episodes.avif" alt="Kill Blue" width="40%">
+  <p >Calendrier de Kill Blue, dates et heure de sortie des épisodes.</p>
+  <a href="https://www.dexerto.fr">Lire plus</a>
+
+
+</section>
+<aside> 
+      <h2>Abonnez-vous à notre Site internet </h2>
+  <form action="#" method="post">
+    <!-- Champ email -->
+    <label for="email">Votre email :</label>
+    <input type="email" id="email" name="email" placeholder="exemple@mail.com" required>
+
+    <!-- Checkbox -->
+    <div>
+      <input type="checkbox" id="consent" name="consent" required>
+      <label for="consent">J'accepte de recevoir les actualités par email</label>
+    </div>
+
+    <!-- Bouton submit -->
+    <button type="submit">S'abonner</button>
+  </form>
+</aside>
 
 </main>
 
@@ -121,7 +250,7 @@
 </body>
 
 <footer>
-<h1> footer </h1>
+<h1> Merci pour votre visites, nous esperrons vous revoir bientot !  </h1>
 </footer>
 
 
