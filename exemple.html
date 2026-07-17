@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemple Header + Hero</title>
+  <style>
+    
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    
+    header {
+      background-color: #222;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    header nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    header nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    header nav ul li a:hover {
+      color: #ff9800;
+    }
+
+    
+    .hero {
+      height: 100vh;
+      background: url(Au\ Bienheureux\,\ un\ bar\ près\ de\ Beaubourg\ la\ nuit.jpg) no-repeat center center/cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 0 20px;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    .hero .cta {
+      background-color: #ff9800;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .hero .cta:hover {
+      background-color: #e68900;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <header>
+    <div class="logo">Franyck Shop</div>
+    <nav>
+      <ul>
+        <li><a href="http://127.0.0.1:5500/exemple.html">Accueil</a></li>
+        <li><a href="exemple3.html">Service</a></li>
+         <li><a href="http://127.0.0.1:5500/exemple2.html">À propos</a></li>
+        <li><a href="http://127.0.0.1:5500/exemple4.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+  <section class="hero">
+    <h1>Bienvenue sur MonSite</h1>
+    <p>Nous créons des solutions modernes et performantes pour booster votre présence en ligne.</p>
+    <a href="#" class="cta">Demander un devis</a>
+  </section>
+
+</body>
+</html>

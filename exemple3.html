@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - MonSite</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #222;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    header nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    header nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    header nav ul li a:hover {
+      color: #ff9800;
+    }
+
+    .services {
+      padding: 120px 40px 40px; /* espace pour compenser le header fixe */
+      text-align: center;
+    }
+
+    .services h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      margin: 10px 0;
+    }
+
+    .card p {
+      color: #555;
+      font-size: 0.95em;
+    }
+
+    .card .cta {
+      display: inline-block;
+      margin-top: 15px;
+      background-color: #ff9800;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+
+
+    .card .cta:hover {
+      background-color: #e68900;
+    }
+
+    
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Franyck Shop</div>
+    <nav>
+      <ul>
+         <li><a href="http://127.0.0.1:5500/exemple.html">Accueil</a></li>
+        <li><a href="exemple3.html">Service</a></li>
+         <li><a href="http://127.0.0.1:5500/exemple2.html">À propos</a></li>
+        <li><a href="http://127.0.0.1:5500/exemple4.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="services">
+    <h1>Nos Services</h1>
+    <p>Découvrez nos solutions adaptées à vos besoins.</p>
+
+    <div class="grid">
+      <div class="card">
+        <img src="/OIP (4).webp" alt="Service 1">
+        <h3>Lait concentré</h3>
+        <p>Tout vos produits laitié à porter de main.</p>
+        <a href="#" class="cta">En savoir plus</a>
+      </div>
+
+      <div class="card">
+        <img src="/OIP (3).webp" alt="Service 2">
+        <h3>Pain </h3>
+        <p>Des pains tout droit sortie d'une boulange local.</p>
+        <a href="#" class="cta">En savoir plus</a>
+      </div>
+
+      <div class="card">
+        <img src="/OIP (2).webp" alt="Service 3">
+        <h3>BOMBOM </h3>
+        <p>Des sucreries groumende et appétissantes.</p>
+        <a href="#" class="cta">En savoir plus</a>
+      </div>
+
+      <div class="card">
+        <img src="/OIP (1).webp" alt="Service 4">
+        <h3>Jus de fruit rafraichissant</h3>
+        <p>Des jus de fruits frait et rafraichissant qui vous aiderons à lutter contre la chaleur actuel.</p>
+        <a href="#" class="cta">En savoir plus</a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
